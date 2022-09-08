@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +12,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr 1.3fr;
+    grid-template-columns: 1.2fr 4fr 1.3fr;
     grid-template-rows: 125px 1fr 1fr 1fr 1fr;
     width: 100vw;
     margin: 0;
@@ -26,11 +29,11 @@ a {
     grid-row: 1 / -1;
     background-color: #1992d4;
     grid-template-rows: 50px 200px 200px;
-    gap: 25px;
+    gap: 70px;
 }
 
 .sidebar > div{
-    padding-left: 10%;
+    padding-left: 15%;
 }
 
 .sidebar > h2{
@@ -44,15 +47,27 @@ a {
     text-decoration: none;
 }
 
+
 .header {
     grid-column: 2 / span 3;
     display: grid;
     gap: 16px;
     padding: 1% 3%;
-    grid-template-rows: 20px 30px;
+    grid-template-rows: 50px 50px;
+    font-family: 'Edu QLD Beginner', cursive;
     background-color: white;
 }
 
+#search {
+    width: 70%;
+    height: auto;
+    align-self: center;
+}
+input {
+    align-self: center;
+    height: fit-content;
+    border-radius: 18px;
+}
 .top {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
@@ -62,13 +77,13 @@ a {
 .me {
     display: grid;
     grid-template-columns: 20px 20px 90%;
-    padding-left: 50%;
+    padding-left: 30%;
+    gap: 8px;
 }
 
 .search {
     display: grid;
-    grid-template-columns: 20px 99%;
-    grid-template-rows: 20px;
+    grid-template-columns: 40px calc(100% - 40px);
 }
 .top input {
     width: 90%;
@@ -94,7 +109,7 @@ ul button {
 }
 .intro {
     display: grid;
-    grid-template-columns: 5% 90%;
+    grid-template-columns: 50px calc(100% - 32px);
 }
 
 
@@ -107,6 +122,7 @@ ul button {
     background-color: #e2e8f0;
     gap: 18px;
     padding: 2%;
+    font-family: Roboto, 'san-serif';
 }
 
 .project h2 {
@@ -115,7 +131,7 @@ ul button {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     gap: 16px;
     padding-bottom: 10px;
@@ -136,6 +152,7 @@ h2 {
     background-color: white;
     padding: 5%;
     margin-right: 5%;
+    border-radius: 16px;
 }
 
 .announces {
@@ -160,19 +177,21 @@ h2 {
     grid-template-rows: 50px calc(100% - 50px);
 }
 
+
+/* ICONS */
+
 .icon {
     width: 16px;
     height: 16px;
-    background-color: blueviolet;
 }
 ul {
     padding: 0;
 }
 
 .big {
-    height: 32px;
-    width: 32px;
-    background-color: yellow;
+    height: 50%;
+    width: 50%;
+    background-repeat: no-repeat;
 }
 
 .trends {
@@ -187,4 +206,82 @@ ul {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
+    height: 20%;
+}
+
+.star {
+    background-image: url(./star.svg);
+}
+
+.star,.eye,.fork {
+    background-size: cover;
+}
+
+.eye {
+    background-image: url(./eye.svg);
+}
+
+.fork {
+    background-image: url(./fork.png);
+}
+
+
+span a {
+    color: black;
+}
+.home {
+    background-image: url(./user.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#home {
+    list-style: url(./home.svg);
+}
+
+#profile {
+    list-style: url(./account.png);
+}
+
+#communities {
+    list-style: url(./groups.svg);
+}
+
+#history {
+    list-style: url(./history.png);
+}
+
+#messages {
+    list-style: url(./messages.png);
+}
+
+#privacy {
+    list-style: url(./privacy.svg);
+}
+
+#support {
+    list-style: url(./notification.png);
+}
+
+#tasks {
+    list-style: url(./task.png);
+}
+
+#setting {
+    list-style: url(./settings.svg);
+}
+
+.squirrel {
+    background-image: url(./squirrel.svg);
+    background-size: contain;
+}
+
+.corn {
+    background-image: url(./corn.svg);
+    background-size: contain;
+}
+
+.hat {
+    background-image: url(./hat.svg);
+    background-size: contain;
 }
