@@ -122,7 +122,7 @@ ul button {
 }
 .announce {
     display: grid;
-    grid-template-rows: 50px calc(100% - 50px);
+    grid-template-rows: 40px calc(100% - 40px);
     grid-column: 3 / -1;
     grid-row: 2 / 4;
 }
@@ -135,6 +135,7 @@ h2 {
     display: grid;
     background-color: white;
     padding: 5%;
+    margin-right: 5%;
 }
 
 .announces {
@@ -156,7 +157,7 @@ h2 {
     display: grid;
     grid-column: 3 / -1;
     grid-row: 4 / 6;
-    grid-template-rows: 15% 80%;
+    grid-template-rows: 50px calc(100% - 50px);
 }
 
 .icon {
