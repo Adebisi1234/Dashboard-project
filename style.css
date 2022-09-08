@@ -28,9 +28,10 @@ a {
     grid-column: 1 / span 1;
     grid-row: 1 / -1;
     background-color: #1992d4;
-    grid-template-rows: 50px 200px 200px;
+    grid-template-rows:10px 200px 200px;
     gap: 70px;
 }
+
 
 .sidebar > div{
     padding-left: 15%;
@@ -210,7 +211,7 @@ ul {
 }
 
 .star {
-    background-image: url(./star.svg);
+    background-image: url(./icon/star.svg);
 }
 
 .star,.eye,.fork {
@@ -218,11 +219,11 @@ ul {
 }
 
 .eye {
-    background-image: url(./eye.svg);
+    background-image: url(./icon/eye.svg);
 }
 
 .fork {
-    background-image: url(./fork.png);
+    background-image: url(./icon/fork.png);
 }
 
 
@@ -230,58 +231,58 @@ span a {
     color: black;
 }
 .home {
-    background-image: url(./user.svg);
+    background-image: url(./icon/user.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 }
 
 #home {
-    list-style: url(./home.svg);
+    list-style: url(./icon/home.svg);
 }
 
 #profile {
-    list-style: url(./account.png);
+    list-style: url(./icon/account.png);
 }
 
 #communities {
-    list-style: url(./groups.svg);
+    list-style: url(./icon/groups.svg);
 }
 
 #history {
-    list-style: url(./history.png);
+    list-style: url(./icon/history.png);
 }
 
 #messages {
-    list-style: url(./messages.png);
+    list-style: url(./icon/messages.png);
 }
 
 #privacy {
-    list-style: url(./privacy.svg);
+    list-style: url(./icon/privacy.svg);
 }
 
 #support {
-    list-style: url(./notification.png);
+    list-style: url(./icon/notification.png);
 }
 
 #tasks {
-    list-style: url(./task.png);
+    list-style: url(./icon/task.png);
 }
 
 #setting {
-    list-style: url(./settings.svg);
+    list-style: url(./icon/settings.svg);
 }
 
 .squirrel {
-    background-image: url(./squirrel.svg);
+    background-image: url(./icon/squirrel.svg);
     background-size: contain;
 }
 
 .corn {
-    background-image: url(./corn.svg);
+    background-image: url(./icon/corn.svg);
     background-size: contain;
 }
 
 .hat {
-    background-image: url(./hat.svg);
+    background-image: url(./icon/hat.svg);
     background-size: contain;
 }
